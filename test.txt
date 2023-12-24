@@ -1,1 +1,56 @@
 Шимкович Артем Леонидович
+
+
+// лаб_№2.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+//
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int x, y, z;
+         //1
+         cout << "введите 3 числа: ";
+         cin >> x >> y >> z;
+         cout << boolalpha << ((x == y) || (x == z) || (y == z)) << endl;
+         //2
+         cout << "Введите длинны 3х сторон треугольника: ";
+         cin >> x >> y >> z;
+         cout << boolalpha << ((x + z < y) && (y + z < x) && (x + y < z)) << endl;
+         //3
+         cout << "Введите координаты, а потом радиус круга: ";
+         cin >> x >> y >> z;
+         cout << boolalpha << ((x < (3.14 * (z ^ 2))) && (y < (3.14 * (z ^ 2)))) << endl;
+         //4
+         cout << "Введите год: ";
+         cin >> x;
+         cout << boolalpha << ((x % 100 != 0 && x % 4 == 0) || (x % 100 == 0 && x % 400 != 0)) << endl;
+         //5
+        double x1;
+       //  cout << "Введите число: ";
+        // cin >> x1;
+        // int a, b, c;
+        // a = x1 / 10;
+        // b = a % 10;
+        // c = b;
+         //6
+        cout << "число для 6 задания: ";
+         cin >> x1;
+         x1 = x1 - floor(x1);
+         int a = x1 * 1000;
+         if (a % 10 == 0 || a % 100 == 0 || a / 100 == 0)
+             cout << "YES";
+         else cout << "NO";
+         //7
+         int b;
+         cout << "координаты шахматного поля: ";
+         cin >> x, y;
+         cout << "координаты ферзя: ";
+         cin >> a, b;
+         //8
+
+}
